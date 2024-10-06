@@ -1,0 +1,88 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Jul 25 14:18:22 2024
+| Host         : DESKTOP-AG0E59D running 64-bit major release  (build 9200)
+| Command      : report_drc -file ML_Regression_fil_drc_routed.rpt -pb ML_Regression_fil_drc_routed.pb -rpx ML_Regression_fil_drc_routed.rpx
+| Design       : ML_Regression_fil
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| DPIP-1    | Warning  | Input pipelining                                    | 3          |
+| DPOP-1    | Warning  | PREG Output pipelining                              | 1          |
+| RTSTAT-10 | Warning  | No routable loads                                   | 1          |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_ML_Regression/Add_stage8_add_temp input u_mwfil_chiftop/u_dut/u_ML_Regression/Add_stage8_add_temp/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_ML_Regression/Add_stage8_add_temp input u_mwfil_chiftop/u_dut/u_ML_Regression/Add_stage8_add_temp/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_ML_Regression/Gain5_out1 input u_mwfil_chiftop/u_dut/u_ML_Regression/Gain5_out1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_ML_Regression/Add_stage8_add_temp output u_mwfil_chiftop/u_dut/u_ML_Regression/Add_stage8_add_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+24 net(s) have no routable loads. The problem bus(es) and/or net(s) are u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i,
+u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i,
+u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D,
+u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0],
+u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2:0],
+u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i,
+u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D,
+u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0],
+u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2:0],
+u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i,
+u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0]
+u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2:0].
+Related violations: <none>
+
+

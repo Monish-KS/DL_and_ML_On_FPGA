@@ -1,0 +1,9 @@
+Transformer on FPGA/.circleci
+Transformer on FPGA/SECURITY.md
+Transformer on FPGA/license.txt
+*.Xil
+*.log
+*.jou
+*Documentation
+Transformer on FPGA/src/bertModel.mat
+ML On FPGA/fil_test_fil

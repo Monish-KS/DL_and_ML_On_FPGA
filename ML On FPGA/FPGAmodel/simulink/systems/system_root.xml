@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -8, 1921, 1033]</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">76</P>
+  <Block BlockType="Constant" Name="Constant" SID="76">
+    <P Name="Position">[1030, 390, 1060, 420]</P>
+    <P Name="ZOrder">248</P>
+    <P Name="Value">ypr</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="ML_Regression" SID="51">
+    <PortCounts in="7" out="1"/>
+    <P Name="Position">[550, 111, 985, 599]</P>
+    <P Name="ZOrder">223</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_51"/>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="75">
+    <PortCounts in="2"/>
+    <P Name="Position">[1160, 329, 1240, 431]</P>
+    <P Name="ZOrder">247</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-10&apos;,&apos;MaxYLimReal&apos;,&apos;10&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 0.909803921568627 0.392156862745098;0.149019607843137 0.549019607843137 0.866666666666667;0.96078431372549 0.466666666666667 0.16078431372549;0.286274509803922 0.858823529411765 0.250980392156863;0.752941176470588 0.36078431372549 0.984313725490196;0.423529411764706 0.956862745098039 1;0.949019607843137 0.403921568627451 0.772549019607843],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)}),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2024a&apos;)),&apos;Version&apos;,&apos;2024a&apos;)</P>
+    <P Name="NumInputPorts">2</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Reference" Name="Signal From&#xA;Workspace" SID="60">
+    <PortCounts out="1"/>
+    <P Name="Position">[275, 128, 330, 162]</P>
+    <P Name="ZOrder">232</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">9.19</P>
+    <P Name="SourceBlock">dspsrcs4/Signal From
+Workspace</P>
+    <P Name="SourceType">Signal From Workspace</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="X">x1</P>
+      <P Name="Ts">-1</P>
+      <P Name="nsamps">1</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="ignoreOrWarnInputAndFrameLengths">off</P>
+      <P Name="OutputFrames">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Signal From&#xA;Workspace1" SID="61">
+    <PortCounts out="1"/>
+    <P Name="Position">[275, 198, 330, 232]</P>
+    <P Name="ZOrder">233</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">9.19</P>
+    <P Name="SourceBlock">dspsrcs4/Signal From
+Workspace</P>
+    <P Name="SourceType">Signal From Workspace</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="X">x2</P>
+      <P Name="Ts">-1</P>
+      <P Name="nsamps">1</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="ignoreOrWarnInputAndFrameLengths">off</P>
+      <P Name="OutputFrames">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Signal From&#xA;Workspace2" SID="62">
+    <PortCounts out="1"/>
+    <P Name="Position">[275, 268, 330, 302]</P>
+    <P Name="ZOrder">234</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">9.19</P>
+    <P Name="SourceBlock">dspsrcs4/Signal From
+Workspace</P>
+    <P Name="SourceType">Signal From Workspace</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="X">x3</P>
+      <P Name="Ts">-1</P>
+      <P Name="nsamps">1</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="ignoreOrWarnInputAndFrameLengths">off</P>
+      <P Name="OutputFrames">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Signal From&#xA;Workspace3" SID="63">
+    <PortCounts out="1"/>
+    <P Name="Position">[275, 338, 330, 372]</P>
+    <P Name="ZOrder">235</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">9.19</P>
+    <P Name="SourceBlock">dspsrcs4/Signal From
+Workspace</P>
+    <P Name="SourceType">Signal From Workspace</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="X">x4</P>
+      <P Name="Ts">-1</P>
+      <P Name="nsamps">1</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="ignoreOrWarnInputAndFrameLengths">off</P>
+      <P Name="OutputFrames">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Signal From&#xA;Workspace4" SID="64">
+    <PortCounts out="1"/>
+    <P Name="Position">[275, 408, 330, 442]</P>
+    <P Name="ZOrder">236</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">9.19</P>
+    <P Name="SourceBlock">dspsrcs4/Signal From
+Workspace</P>
+    <P Name="SourceType">Signal From Workspace</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="X">x5</P>
+      <P Name="Ts">-1</P>
+      <P Name="nsamps">1</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="ignoreOrWarnInputAndFrameLengths">off</P>
+      <P Name="OutputFrames">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Signal From&#xA;Workspace5" SID="65">
+    <PortCounts out="1"/>
+    <P Name="Position">[275, 478, 330, 512]</P>
+    <P Name="ZOrder">237</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">9.19</P>
+    <P Name="SourceBlock">dspsrcs4/Signal From
+Workspace</P>
+    <P Name="SourceType">Signal From Workspace</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="X">x6</P>
+      <P Name="Ts">-1</P>
+      <P Name="nsamps">1</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="ignoreOrWarnInputAndFrameLengths">off</P>
+      <P Name="OutputFrames">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Signal From&#xA;Workspace6" SID="66">
+    <PortCounts out="1"/>
+    <P Name="Position">[275, 548, 330, 582]</P>
+    <P Name="ZOrder">238</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">9.19</P>
+    <P Name="SourceBlock">dspsrcs4/Signal From
+Workspace</P>
+    <P Name="SourceType">Signal From Workspace</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="X">x7</P>
+      <P Name="Ts">-1</P>
+      <P Name="nsamps">1</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="ignoreOrWarnInputAndFrameLengths">off</P>
+      <P Name="OutputFrames">off</P>
+    </InstanceData>
+  </Block>
+  <Line>
+    <P Name="ZOrder">111</P>
+    <P Name="Src">60#out:1</P>
+    <P Name="Dst">51#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">112</P>
+    <P Name="Src">61#out:1</P>
+    <P Name="Dst">51#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">113</P>
+    <P Name="Src">62#out:1</P>
+    <P Name="Dst">51#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">114</P>
+    <P Name="Src">63#out:1</P>
+    <P Name="Dst">51#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">115</P>
+    <P Name="Src">64#out:1</P>
+    <P Name="Dst">51#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">116</P>
+    <P Name="Src">65#out:1</P>
+    <P Name="Dst">51#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">117</P>
+    <P Name="Src">66#out:1</P>
+    <P Name="Dst">51#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">125</P>
+    <P Name="Src">51#out:1</P>
+    <P Name="Dst">75#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">126</P>
+    <P Name="Src">76#out:1</P>
+    <P Name="Dst">75#in:2</P>
+  </Line>
+</System>

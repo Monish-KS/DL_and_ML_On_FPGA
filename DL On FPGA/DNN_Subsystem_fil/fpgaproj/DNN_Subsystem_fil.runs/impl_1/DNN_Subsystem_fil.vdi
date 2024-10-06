@@ -1,0 +1,1604 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Aug  6 14:47:29 2024
+# Process ID: 5652
+# Current directory: C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1
+# Command line: vivado.exe -log DNN_Subsystem_fil.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DNN_Subsystem_fil.tcl -notrace
+# Log file: C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1/DNN_Subsystem_fil.vdi
+# Journal file: C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1\vivado.jou
+# Running On: DESKTOP-AG0E59D, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 16, Host memory: 16781 MB
+#-----------------------------------------------------------
+source DNN_Subsystem_fil.tcl -notrace
+Command: link_design -top DNN_Subsystem_fil -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.dcp' for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo.dcp' for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1602.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 857 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0'
+Finished Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0'
+Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0'
+Finished Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0'
+Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0'
+Finished Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0'
+Parsing XDC File [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sysclk' already exists, overwriting the previous clock with the same name. [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {NAME =~ *u_mwfil_chifcore/u_controller/dut_enable_int_reg/C}'. [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {NAME =~ *u_mwfil_chifcore/u_controller/dut_enable_int_reg/Q}'. [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-source [get_pins -hier -filter {NAME =~ *u_mwfil_chifcore/u_controller/dut_enable_int_reg/C}]'. [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-2489] -period contains time 15.151515 which will be rounded to 15.152 to ensure it is an integer multiple of 1 picosecond [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:5]
+WARNING: [Vivado 12-2489] -waveform contains time 7.575758 which will be rounded to 7.576 to ensure it is an integer multiple of 1 picosecond [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:5]
+WARNING: [Vivado 12-646] clock 'generated_dut_clk' not found. [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:7]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group generated_dut_clk'. [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:7]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:7]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc:7]
+Finished Parsing XDC File [C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc]
+Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo_clocks.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0'
+Finished Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo_clocks.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0'
+Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo_clocks.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0'
+Finished Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo_clocks.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0'
+Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo_clocks.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0'
+Finished Parsing XDC File [c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo_clocks.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1815.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 22 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+13 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1815.324 ; gain = 213.156
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.645 . Memory (MB): peak = 1815.324 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: c3d733d0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1815.324 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 18 inverter(s) to 20 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: d33188f9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.241 . Memory (MB): peak = 2081.336 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 118 cells and removed 218 cells
+INFO: [Opt 31-1021] In phase Retarget, 19 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: e537a52c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.308 . Memory (MB): peak = 2081.336 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 111 cells and removed 246 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 18 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 8b1ecdfb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.396 . Memory (MB): peak = 2081.336 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 31 cells
+INFO: [Opt 31-1021] In phase Sweep, 42 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 8b1ecdfb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.493 . Memory (MB): peak = 2081.336 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 8b1ecdfb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.498 . Memory (MB): peak = 2081.336 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 8b1ecdfb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.507 . Memory (MB): peak = 2081.336 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 22 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             118  |             218  |                                             19  |
+|  Constant propagation         |             111  |             246  |                                             18  |
+|  Sweep                        |               0  |              31  |                                             42  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             22  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2081.336 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 10be327d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.663 . Memory (MB): peak = 2081.336 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 2 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: 5c1acb38
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 5c1acb38
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2242.934 ; gain = 161.598
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 5c1acb38
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 87390d33
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1/DNN_Subsystem_fil_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file DNN_Subsystem_fil_drc_opted.rpt -pb DNN_Subsystem_fil_drc_opted.pb -rpx DNN_Subsystem_fil_drc_opted.rpx
+Command: report_drc -file DNN_Subsystem_fil_drc_opted.rpt -pb DNN_Subsystem_fil_drc_opted.pb -rpx DNN_Subsystem_fil_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1/DNN_Subsystem_fil_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 2b368eb6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d5f89ab9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.267 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 137bf0842
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.918 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 137bf0842
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.923 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 137bf0842
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.934 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 14da92133
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 15aae21fa
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 15aae21fa
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 6 LUTNM shape to break, 46 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 6, total 6, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 27 nets or LUTs. Breaked 6 LUTs, combined 21 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            6  |             21  |                    27  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            6  |             21  |                    27  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 2603dff73
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 18acb0a30
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 18acb0a30
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1adbb03e9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 13fff43e8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 15b14065d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 144cc7371
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1380a2b98
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 14491139a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 110bf4f8a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 153ca4f81
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 194347b03
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 194347b03
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 15243c015
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-42.142 | TNS=-42.142 |
+Phase 1 Physical Synthesis Initialization | Checksum: f0511f92
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 156692aec
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 15243c015
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-40.123. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 218b79f77
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 218b79f77
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 218b79f77
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 218b79f77
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 218b79f77
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2ba81d902
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Ending Placer Task | Checksum: 1c319dcfc
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+80 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.243 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1/DNN_Subsystem_fil_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file DNN_Subsystem_fil_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file DNN_Subsystem_fil_utilization_placed.rpt -pb DNN_Subsystem_fil_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file DNN_Subsystem_fil_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.36s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.123 | TNS=-40.123 |
+Phase 1 Physical Synthesis Initialization | Checksum: 10b89b56b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.290 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.123 | TNS=-40.123 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 10b89b56b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.311 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.123 | TNS=-40.123 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/DUT2CHIF.u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/DOA0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz_0/inst/clk_out1_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_BinaryPrediction/yprd0__4_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_12_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_12_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.117 | TNS=-40.117 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 7 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.067 | TNS=-40.067 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_17_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_17_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.053 | TNS=-40.053 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.046 | TNS=-40.046 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_18_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_18_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.038 | TNS=-40.038 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_15_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_15
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_15_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.035 | TNS=-40.035 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.035 | TNS=-40.035 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_15_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_15_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.029 | TNS=-40.029 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[1]. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_3_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.018 | TNS=-40.018 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_19_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_19_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-40.005 | TNS=-40.005 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_9_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_9_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.997 | TNS=-39.997 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_17_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_17_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.989 | TNS=-39.989 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_n_0_repN. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_comp_2.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.948 | TNS=-39.948 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_13_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_13_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.922 | TNS=-39.922 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_19_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_19_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.908 | TNS=-39.908 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_9_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_9_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.905 | TNS=-39.905 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_13_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_13_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.900 | TNS=-39.900 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_17_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_17_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.896 | TNS=-39.896 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_18_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_18_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.894 | TNS=-39.894 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1_inferred__2/i___4_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_3__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.888 | TNS=-39.888 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 28 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_1[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.885 | TNS=-39.885 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_12_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_12_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.874 | TNS=-39.874 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_8_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_8_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.854 | TNS=-39.854 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_14_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_14_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.844 | TNS=-39.844 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[0]. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_4_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.834 | TNS=-39.834 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_2_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_2_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.824 | TNS=-39.824 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_12_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_12_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.815 | TNS=-39.815 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.815 | TNS=-39.815 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.805 | TNS=-39.805 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[1]. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_2_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.804 | TNS=-39.804 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[2]. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.804 | TNS=-39.804 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[0]. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_4_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.798 | TNS=-39.798 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_4_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_4_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_8__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.797 | TNS=-39.797 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1_inferred__2/i___4_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_3_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_3_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.795 | TNS=-39.795 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.791 | TNS=-39.791 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_3__2_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_3__2_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.768 | TNS=-39.768 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_20_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_20
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.756 | TNS=-39.756 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.734 | TNS=-39.734 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[1]. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_3_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.731 | TNS=-39.731 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_16_comp_3.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.713 | TNS=-39.713 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[1]. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_3_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.702 | TNS=-39.702 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_2__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.700 | TNS=-39.700 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_8_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_8
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.695 | TNS=-39.695 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_2__3_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_2__3_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.692 | TNS=-39.692 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.666 | TNS=-39.666 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_4__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_4__0_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_4__0_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.649 | TNS=-39.649 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_7__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_7__0
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_7__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.638 | TNS=-39.638 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_5__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_5__0
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_5__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.628 | TNS=-39.628 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_1__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_6_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_6
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.624 | TNS=-39.624 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.621 | TNS=-39.621 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_3_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_3_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.596 | TNS=-39.596 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_1__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.577 | TNS=-39.577 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_1__0_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.564 | TNS=-39.564 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6__0
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.553 | TNS=-39.553 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_1_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_5__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.539 | TNS=-39.539 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.515 | TNS=-39.515 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_comp_1.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.508 | TNS=-39.508 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7__0_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7__0_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_8__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.496 | TNS=-39.496 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.492 | TNS=-39.492 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1_inferred__3/i___4_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.491 | TNS=-39.491 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_6__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.484 | TNS=-39.484 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_2_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_2_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_7__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.482 | TNS=-39.482 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.482 | TNS=-39.482 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_comp_2.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.482 | TNS=-39.482 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.482 | TNS=-39.482 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_comp_3.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.482 | TNS=-39.482 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.482 | TNS=-39.482 |
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_comp_4.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.482 | TNS=-39.482 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/DUT2CHIF.u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/DOA0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz_0/inst/clk_out1_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.412 | TNS=-39.412 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 22 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.408 | TNS=-39.408 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.406 | TNS=-39.406 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.402 | TNS=-39.402 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_8__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_11_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_11
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.387 | TNS=-39.387 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_3__3_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_3__3
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_3__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.383 | TNS=-39.383 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.369 | TNS=-39.369 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.366 | TNS=-39.366 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 28 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_1[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.360 | TNS=-39.360 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_6__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_12_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_12
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.359 | TNS=-39.359 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.335 | TNS=-39.335 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_12_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_12
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.303 | TNS=-39.303 |
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_1__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_1__0_comp
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.290 | TNS=-39.290 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.263 | TNS=-39.263 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.262 | TNS=-39.262 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_3__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9__0
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.257 | TNS=-39.257 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.257 | TNS=-39.257 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.251 | TNS=-39.251 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.249 | TNS=-39.249 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_17_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.249 | TNS=-39.249 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.248 | TNS=-39.248 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_18_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_18_comp_1
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_18_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.247 | TNS=-39.247 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry__0_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.243 | TNS=-39.243 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6__0
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.242 | TNS=-39.242 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1_inferred__2/i___4_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0_repN.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_comp
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.242 | TNS=-39.242 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.228 | TNS=-39.228 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.227 | TNS=-39.227 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.213 | TNS=-39.213 |
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-39.212 | TNS=-39.212 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_BinaryPrediction/wr_din. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0_i_12__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/WS3_carry__2_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/p_1_in_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/PM0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/WS3_carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__0_n_85. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 9 pins.
+INFO: [Physopt 32-735] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_i_16_n_0. Optimization improves timing on the net.
+INFO: [Common 17-14] Message 'Physopt 32-735' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_i_34_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__1/i__carry__4_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry_i_3__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__0/i__carry__4_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__3_i_4__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_carry__3_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 27 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__1_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_18_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_18
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/p_1_in14_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 27 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__3_i_2__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_carry__3_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__4_1[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/ytan_1_1[0].  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_11
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_17_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_4_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_4
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 27 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_6_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_6
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_6_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_6
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__1_i_16_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__1_i_13_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__1_i_13
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__1_i_16_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_16_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_16
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_15_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_15
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__4_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_8_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_8
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__3_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/ytan_1_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_3_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_3
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_5_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_5
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 27 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__1_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/ytan_0_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_5_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_5
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_7_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_7
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_7_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_7
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__3_0[1].  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__3_i_1
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_n_99. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_3__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_3__0
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__3_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__1_i_14_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__1_i_14
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__3_i_7_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__3_i_7
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_6_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry_i_6
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_3__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/O[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_1_in[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/add_cast0[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_76__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_1_in77_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_122__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_1_in71_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_109__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_139__0_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_188__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 11 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__3_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_inferred__0/i___63_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_inferred__0/i__carry__2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__2_i_8[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__7_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry__0_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 27 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__1_i_16_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_15_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_15
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 27 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-702] Processed net y0_i_185__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_296__0_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__1_i_16_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__1_i_13_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__1_i_13
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_15_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_15
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__2_i_13_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__2_i_13
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__1_i_15_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__1_i_15
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_16_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__3_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_14_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_14
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_274__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_270__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_341_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_341
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___63_carry__0_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_inferred__0/i__carry__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/ytan_2_1[0].  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_1__3
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_8_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_8
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_7_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_7
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__7_2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/ytan_2_1[0].  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_1__3
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_8_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_8
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/ytan_2_1[0].  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_1__3
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_10_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_10
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_251_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_0[10].  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_322
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_0[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_315__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_344_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_344
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_343_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_343
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_8__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_17__0_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_21__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_41__0_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_70__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_1_in41_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_125__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_1_in35_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0__5_i_110__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_180__0_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 30 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_40__0_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0__5_i_148__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_211__0_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 28 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_52__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_50__0_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_103__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 11 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_100__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_143__0_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_171__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_167__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_2[6].  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__2_i_176
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_345_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_345
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 4 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_341_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_n_83. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_2_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_2
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_3_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_3
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/p_2_in__6[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/p_1_in[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/add_cast0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_39_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_84_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_208_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_152_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_298__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_241__0_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_156__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_152__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_2[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_213_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_213
+INFO: [Physopt 32-702] Processed net y0_i_391__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_dut/u_DNN_Subsystem/u_Hidden_Layer1/p_1_in122_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_468_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_419__0_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-702] Processed net y0_i_499_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_486_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_519_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_593_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 32 pins.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_214__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_214__0
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_2[4].  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__2_i_178__0
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_229__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_225__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_254_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_281_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 13 pins.
+INFO: [Common 17-14] Message 'Physopt 32-608' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_592_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__2_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_216__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_216__0
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_215__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_215__0
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_194_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_547_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/sclr_d1_reg_rep__4_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_623_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_619_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_633_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_702_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_698_n_0.  Re-placed instance u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_698
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_277__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_1[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_312_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_396__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_396__0
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_394_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_394
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_394_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_394
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_625_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_621_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_650_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_212_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_3_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_3
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_639_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_636_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_686_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/dut_din[0].  Re-placed instance u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_692
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_214__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_10_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_10
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_12_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5_i_12
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_729_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_725_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/y0_i_594_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/data00. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/empty_tmp_d1_reg_rep__0_n_0. Optimizations did not improve timing on the net.
+Phase 3 Critical Path Optimization | Checksum: 10b89b56b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2242.934 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/DUT2CHIF.u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/DOA0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz_0/inst/clk_out1_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_BinaryPrediction/yprd0__4_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_comp.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_10_comp_2.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1_inferred__3/i___4_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_8__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_12_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/yprd0__4_carry_i_12_comp_1
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_8__0_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_8__0_comp.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1_inferred__2/i___4_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_9
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1_inferred__2/i___4_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_BinaryPrediction/wr_din. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0_i_3__1_n_0. Replicated 1 times.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_4_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_4_comp_1.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_2__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_12_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry__0_i_12
+INFO: [Physopt 32-81] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0_i_12__1_n_0. Replicated 1 times.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0_i_14__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/p_1_in29_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/WS3_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/WS3_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/WS3_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/p_1_in_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/PM0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/WS3_carry_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/WS3_carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__0_n_93. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_i_34_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__1/i__carry__4_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__1/i__carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__1/i__carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__1/i__carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__1/i__carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__1/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry_i_3__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__0/i__carry__4_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__0/i__carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__3_i_4__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_carry__3_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_17_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__3_i_2__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_carry__3_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_16_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__0_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_n_99. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_12__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_12__0
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__3_1[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__2_i_14_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_carry__2_i_14
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__3_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_inferred__0/i___63_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_inferred__0/i___63_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c4_inferred__0/i__carry__2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__2_i_8[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c4_inferred__0/i__carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__7_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry__0_i_7_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry__0_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_8__0_n_0. Replicated 1 times.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_4__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_4__0
+INFO: [Physopt 32-81] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_8_n_0. Replicated 1 times.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_7_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/i__carry_i_7
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_3__0_n_0. Replicated 1 times.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_5__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_5__0
+INFO: [Physopt 32-81] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_5__0_n_0. Replicated 1 times.
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_5__0_n_0_repN.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_5__0_replica
+INFO: [Physopt 32-663] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_11__0_n_0.  Re-placed instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_11__0
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_2_in__7[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_19__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_33__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_33__0_n_0. Critical path length was reduced through logic transformation on cell u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5_i_33__0_comp.
+INFO: [Physopt 32-81] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2_i_10__0_n_0. Replicated 1 times.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/DUT2CHIF.u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/DOA0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_clk_wiz_0/inst/clk_out1_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y1_inferred__2/i___4_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i___4_carry_i_10_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_BinaryPrediction/wr_din. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0_i_14__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/p_1_in29_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/p_1_in_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/PM0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/WS3_carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__0_n_93. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_i_34_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__1/i__carry__4_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry_i_3__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_inferred__0/i__carry__4_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/i__carry__3_i_4__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_carry__3_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_17_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry__0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/c3_carry_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3_n_99. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/A_0[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/O[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_1_in[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/add_cast0[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_76__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_1_in77_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0_i_122__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_dut/u_DNN_Subsystem/u_Hidden_Layer2/p_1_in71_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_109__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_139__0_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_188__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_185__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_296__0_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_274__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_270__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/ytan_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_341_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/data00. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/p_2_in__6[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/p_1_in[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/add_cast0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_39_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0_i_122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_84_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_208_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_152_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_298__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_241__0_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_391__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_dut/u_DNN_Subsystem/u_Hidden_Layer1/p_1_in122_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_468_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_419__0_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_499_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_486_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net y0_i_519_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_593_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_639_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_636_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_686_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_729_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/u_dpscram/y0_i_725_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/y0_i_594_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/data00. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/empty_tmp_d1_reg_rep__0_n_0. Optimizations did not improve timing on the net.
+Phase 4 Critical Path Optimization | Checksum: 10b89b56b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:34 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-37.622 | TNS=-37.622 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          2.501  |          2.501  |            7  |              0  |                   284  |           0  |           2  |  00:00:33  |
+|  Total          |          2.501  |          2.501  |            7  |              0  |                   284  |           0  |           3  |  00:00:33  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.934 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1de78f96c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:34 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+890 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:34 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 2242.934 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1/DNN_Subsystem_fil_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: be3fdfc3 ConstDB: 0 ShapeSum: e1901af6 RouteDB: 0
+Post Restoration Checksum: NetGraph: a862392c NumContArr: 67cc432a Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 1102e7c56
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2330.898 ; gain = 87.965
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1102e7c56
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2330.914 ; gain = 87.980
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1102e7c56
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2336.922 ; gain = 93.988
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1102e7c56
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2336.922 ; gain = 93.988
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2444fcd20
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2366.449 ; gain = 123.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-36.217| TNS=-36.217| WHS=-0.272 | THS=-61.752|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 2412436de
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2383.855 ; gain = 140.922
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-36.217| TNS=-36.191| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 2282f5adc
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00187144 %
+  Global Horizontal Routing Utilization  = 0.00177607 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 5639
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 5639
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1f50ef07f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1f50ef07f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2393.012 ; gain = 150.078
+Phase 3 Initial Routing | Checksum: 1343e1220
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3079
+ Number of Nodes with overlaps = 1345
+ Number of Nodes with overlaps = 598
+ Number of Nodes with overlaps = 342
+ Number of Nodes with overlaps = 97
+ Number of Nodes with overlaps = 50
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-44.717| TNS=-44.717| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 28607ad43
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 3804
+ Number of Nodes with overlaps = 1438
+ Number of Nodes with overlaps = 654
+ Number of Nodes with overlaps = 232
+ Number of Nodes with overlaps = 177
+ Number of Nodes with overlaps = 78
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-45.278| TNS=-45.278| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1bb2fd051
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 2393.012 ; gain = 150.078
+Phase 4 Rip-up And Reroute | Checksum: 1bb2fd051
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 10ec2a277
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-44.717| TNS=-44.717| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 19138f558
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 19138f558
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+Phase 5 Delay and Skew Optimization | Checksum: 19138f558
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 16413c095
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-44.563| TNS=-44.563| WHS=0.047  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 100139044
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+Phase 6 Post Hold Fix | Checksum: 100139044
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.05466 %
+  Global Horizontal Routing Utilization  = 1.5076 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 53.1532%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 64.7059%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 166cb886d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 166cb886d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1764844b2
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-44.563| TNS=-44.563| WHS=0.047  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1764844b2
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2393.012 ; gain = 150.078
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+909 Infos, 7 Warnings, 4 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 2393.012 ; gain = 150.078
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 2402.156 ; gain = 9.145
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1/DNN_Subsystem_fil_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file DNN_Subsystem_fil_drc_routed.rpt -pb DNN_Subsystem_fil_drc_routed.pb -rpx DNN_Subsystem_fil_drc_routed.rpx
+Command: report_drc -file DNN_Subsystem_fil_drc_routed.rpt -pb DNN_Subsystem_fil_drc_routed.pb -rpx DNN_Subsystem_fil_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1/DNN_Subsystem_fil_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file DNN_Subsystem_fil_methodology_drc_routed.rpt -pb DNN_Subsystem_fil_methodology_drc_routed.pb -rpx DNN_Subsystem_fil_methodology_drc_routed.rpx
+Command: report_methodology -file DNN_Subsystem_fil_methodology_drc_routed.rpt -pb DNN_Subsystem_fil_methodology_drc_routed.pb -rpx DNN_Subsystem_fil_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.runs/impl_1/DNN_Subsystem_fil_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file DNN_Subsystem_fil_power_routed.rpt -pb DNN_Subsystem_fil_power_summary_routed.pb -rpx DNN_Subsystem_fil_power_routed.rpx
+Command: report_power -file DNN_Subsystem_fil_power_routed.rpt -pb DNN_Subsystem_fil_power_summary_routed.pb -rpx DNN_Subsystem_fil_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+921 Infos, 7 Warnings, 4 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file DNN_Subsystem_fil_route_status.rpt -pb DNN_Subsystem_fil_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file DNN_Subsystem_fil_timing_summary_routed.rpt -pb DNN_Subsystem_fil_timing_summary_routed.pb -rpx DNN_Subsystem_fil_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file DNN_Subsystem_fil_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file DNN_Subsystem_fil_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file DNN_Subsystem_fil_bus_skew_routed.rpt -pb DNN_Subsystem_fil_bus_skew_routed.pb -rpx DNN_Subsystem_fil_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  6 14:49:44 2024...

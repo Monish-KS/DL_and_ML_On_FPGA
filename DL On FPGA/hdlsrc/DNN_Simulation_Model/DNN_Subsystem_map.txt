@@ -1,0 +1,5 @@
+DNN_Simulation_Model/DNN_Subsystem/BinaryPrediction --> BinaryPrediction
+DNN_Simulation_Model/DNN_Subsystem/Hidden_Layer1 --> Hidden_Layer1
+DNN_Simulation_Model/DNN_Subsystem/Hidden_Layer2 --> Hidden_Layer2
+DNN_Simulation_Model/DNN_Subsystem/OutputLayer --> OutputLayer
+DNN_Simulation_Model/DNN_Subsystem --> DNN_Subsystem

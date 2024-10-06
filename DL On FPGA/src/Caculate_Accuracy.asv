@@ -1,0 +1,30 @@
+close all; clc
+
+yHDL = out.y1;
+ySim = out.y2;
+yNN = out.y3;
+
+yHDL(end) = [];
+ySim(end) = [];
+yNN(end) = [];
+
+%Accuracy_HDL = 1000 * mean(yHDL == YTest)
+Accuracy_Sim = 1000 * mean(ySim == YTest)
+Accuracy_FPGA = 1000 * mean(yNN == YTest)
+yFPGA = double(YNN)
+plt(yNN_HDL,'o')
+hold on; grid on
+plot(YTest,'*')
+legend('Prediction','Actual Data')
+title('Binary Classification using NN')
+
+figure
+C1 = categorical(yNN_HDL,[1 0],{'Diabetic','Non-Diabetic'});
+histogram(C1,'BarWidth',0.3);
+hold on; grid on;
+
+C2 = categorical(YTest, [1 0],{'Diabetic','Non-Diabetic'});
+histogram(C2, 'BarWidth', 0.15);
+legend ('Actual', 'Predicted')
+ylabel ( 'Frequency')
+title ('Histogram: Binary Classification using Neural Network')

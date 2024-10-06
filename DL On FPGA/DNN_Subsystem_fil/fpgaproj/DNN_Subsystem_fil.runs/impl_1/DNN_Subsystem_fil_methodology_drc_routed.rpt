@@ -1,0 +1,236 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Tue Aug  6 14:49:42 2024
+| Host         : DESKTOP-AG0E59D running 64-bit major release  (build 9200)
+| Command      : report_methodology -file DNN_Subsystem_fil_methodology_drc_routed.rpt -pb DNN_Subsystem_fil_methodology_drc_routed.pb -rpx DNN_Subsystem_fil_methodology_drc_routed.rpx
+| Design       : DNN_Subsystem_fil
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 38
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain        | 2          |
+| SYNTH-13  | Warning  | combinational multiplier                               | 25         |
+| TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
+| TIMING-16 | Warning  | Large setup violation                                  | 1          |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                     | 6          |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint   | 1          |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X32Y112 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X9Y74 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0.
+Related violations: <none>
+
+SYNTH-13#2 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__0.
+Related violations: <none>
+
+SYNTH-13#3 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__1.
+Related violations: <none>
+
+SYNTH-13#4 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__2.
+Related violations: <none>
+
+SYNTH-13#5 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__3.
+Related violations: <none>
+
+SYNTH-13#6 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__4.
+Related violations: <none>
+
+SYNTH-13#7 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__5.
+Related violations: <none>
+
+SYNTH-13#8 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__6.
+Related violations: <none>
+
+SYNTH-13#9 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer1/y0__7.
+Related violations: <none>
+
+SYNTH-13#10 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0.
+Related violations: <none>
+
+SYNTH-13#11 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__0.
+Related violations: <none>
+
+SYNTH-13#12 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__1.
+Related violations: <none>
+
+SYNTH-13#13 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__10.
+Related violations: <none>
+
+SYNTH-13#14 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__2.
+Related violations: <none>
+
+SYNTH-13#15 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__3.
+Related violations: <none>
+
+SYNTH-13#16 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__4.
+Related violations: <none>
+
+SYNTH-13#17 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__5.
+Related violations: <none>
+
+SYNTH-13#18 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__6.
+Related violations: <none>
+
+SYNTH-13#19 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__7.
+Related violations: <none>
+
+SYNTH-13#20 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__8.
+Related violations: <none>
+
+SYNTH-13#21 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_Hidden_Layer2/y0__9.
+Related violations: <none>
+
+SYNTH-13#22 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/c3.
+Related violations: <none>
+
+SYNTH-13#23 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0.
+Related violations: <none>
+
+SYNTH-13#24 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__0.
+Related violations: <none>
+
+SYNTH-13#25 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_DNN_Subsystem/u_OutputLayer/y0__1.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -44.599 ns between u_mwfil_chiftop/u_mwfil_chifcore/CHIF2DUT.u_b2dfifo/empty_tmp_d1_reg_rep__0/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/DUT2CHIF.u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 12). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 16). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 6). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 10). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 14). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 8). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name sysclk -waveform {0.000 5.000} [get_ports sysclk] (Source: C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc (Line: 1))
+Previous: create_clock -period 10.000 [get_ports sysclk] (Source: c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name sysclk -waveform {0.000 5.000} [get_ports sysclk] (Source: C:/Projects/DL FPGA/DNN_Subsystem_fil/filsrc/DNN_Subsystem_fil.xdc (Line: 1))
+Previous: create_clock -period 10.000 [get_ports sysclk] (Source: c:/Projects/DL FPGA/DNN_Subsystem_fil/fpgaproj/DNN_Subsystem_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+
